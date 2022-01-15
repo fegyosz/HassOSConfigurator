@@ -28,6 +28,7 @@ set +e
       echo "$(</tmp/$partition/cmdline.txt )"
       cp /tmp/$partition/cmdline.txt /tmp/$partition/cmdline.bak
       echo "dwc_otg.lpm_enable=0">/tmp/$partition/cmdline.txt
+      echo "$(</tmp/$partition/cmdline.txt )"
     else
       echo "no $partition config found"
     fi
