@@ -25,7 +25,7 @@ set +e
         echo "adding $config to $partition config.txt"
         echo "$config">>/tmp/$partition/config.txt
       fi
-      cat /tmp/$partition/cmdline.txt
+      echo "$(</tmp/$partition/cmdline.txt )"
     else
       echo "no $partition config found"
     fi
